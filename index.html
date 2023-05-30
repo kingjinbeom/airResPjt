@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="./css/common.css" rel=" stylesheet" type="text/css">
+    <link href="./css/index.css" rel=" stylesheet" type="text/css">
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/db.js"></script>
+    <script src="./js/menuChange.js"></script>
+    <script src="./js/viewChange.js"></script>
+    <script src="./js/signinSession.js"></script>
+    <script src="./js/index.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div class="title_wrap">
+            BTC Air Reservation Service
+        </div>
+
+        <div class="menu_wrap">
+            <a class="sign_up" href="#none">Sign-up</a>
+            <a class="sign_in" href="#none">Sign-in</a>
+            <a class="sign_out" href="#none">Sign-out</a>
+            <a class="res" href="#none">Reservation</a>
+            <a class="res_list" href="#none">Reservation-List</a>
+        </div>
+
+        <div class="sign_up_wrap">
+            <input type="text" , name="u_id" placeholder="Input user ID">
+            </br>
+            <input type="password" , name="u_pw" placeholder="Input user PW">
+            </br>
+            <div>성별</div>
+            <div>
+                <input type="radio" , name="u_gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" , name="u_gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <input type="email" , name="u_mail" placeholder="Input user MAIL">
+            </br>
+            <input type="tel" , name="u_phone" placeholder="Input user PHONE NUMBER">
+            </br>
+            <input type="button" , value="SIGN UP">
+        </div>
+
+        <div class="sign_in_wrap">
+            <input type="text" , name="u_name" placeholder="Input user NAME">
+            </br>
+            <input type="password" , name="u_pw" placeholder="Input user PW">
+            </br>
+            <input type="button" , value="SIGN IN">
+        </div>
+
+        <div class="res_wrap">
+            <input type="text" , name="u_id" placeholder="Input user ID">
+            </br>
+            <input type="email" , name="u_mail" placeholder="Input user MAIL">
+            </br>
+            <input type="tel" , name="u_phone" placeholder="Input user PHONE NUMBER">
+            </br>
+            <select name="departure">
+                <option value="">김포</option>
+                <option value="">청주</option>
+                <option value="">김해</option>
+                <option value="">제주</option>
+            </select>
+            </br>
+            <input type="date", name="departure_date" placeholder="Select a date for departure">
+            </br>
+            <select name="destination">
+                <option value="">김포</option>
+                <option value="">청주</option>
+                <option value="">김해</option>
+                <option value="">제주</option>
+            </select>
+            </br>
+            <input type="date", name="destination_date" placeholder="Select a date for destination">
+            </br>
+            <button>DONE</button>
+        </div>
+
+        <div class="res_list_wrap">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<template id="list_item">
+    <div class="txt"></div>
+</template>
