@@ -4,7 +4,7 @@
 }
 
 /* title_wrap start */
-#wrap > div.title_wrap {
+#wrap>div.title_wrap {
     border-bottom: thick double #dadada;
     margin: 10px;
     padding: 10px;
@@ -12,15 +12,16 @@
     text-align: center;
     font-size: 1.1em;
 }
+
 /* title_wrap end */
 
 
 /* menu_wrap start */
-#wrap > div.menu_wrap {
+#wrap>div.menu_wrap {
     text-align: center;
 }
 
-#wrap > div.menu_wrap a {
+#wrap>div.menu_wrap a {
     display: inline-block;
     width: 100px;
     margin: 10px 5px;
@@ -30,24 +31,25 @@
     text-align: center;
 }
 
-#wrap > div.menu_wrap a:hover {
+#wrap>div.menu_wrap a:hover {
     background-color: #f8f8f8;
     text-decoration: none;
 }
 
-#wrap > div.menu_wrap a.sign_out {
+#wrap>div.menu_wrap a.sign_out {
     display: none;
 }
+
 /* menu_wrap end */
 
 
 /* sign_up_wrap start */
-#wrap > div.sign_up_wrap {
+#wrap>div.sign_up_wrap {
     display: none;
     text-align: center;
 }
 
-#wrap > div.sign_up_wrap input {
+#wrap>div.sign_up_wrap input {
     width: 400px;
     padding: 10px;
     margin: 1px;
@@ -55,24 +57,25 @@
     border-radius: 7px;
 }
 
-#wrap > div.sign_up_wrap input[type='button'] {
+#wrap>div.sign_up_wrap input[type='button'] {
     width: 100px;
     cursor: pointer;
 }
 
-#wrap > div.sign_up_wrap input[type='button']:hover {
+#wrap>div.sign_up_wrap input[type='button']:hover {
     background-color: #f8f8f8;
 }
+
 /* sign_up_wrap end */
 
 
 /* sign_in_wrap start */
-#wrap > div.sign_in_wrap {
+#wrap>div.sign_in_wrap {
     display: none;
     text-align: center;
 }
 
-#wrap > div.sign_in_wrap input {
+#wrap>div.sign_in_wrap input {
     width: 400px;
     padding: 10px;
     margin: 1px;
@@ -80,24 +83,25 @@
     border-radius: 7px;
 }
 
-#wrap > div.sign_in_wrap input[type='button'] {
+#wrap>div.sign_in_wrap input[type='button'] {
     width: 100px;
     cursor: pointer;
 }
 
-#wrap > div.sign_in_wrap input[type='button']:hover {
+#wrap>div.sign_in_wrap input[type='button']:hover {
     background-color: #f8f8f8;
 }
+
 /* sign_in_wrap end */
 
 
 /* write_wrap start */
-#wrap > div.write_wrap {
+#wrap>div.write_wrap {
     display: none;
     text-align: center;
 }
 
-#wrap > div.write_wrap input {
+#wrap>div.write_wrap input {
     width: 500px;
     padding: 20px;
     margin: 10px;
@@ -106,7 +110,7 @@
     font-size: 1.2em;
 }
 
-#wrap > div.write_wrap button {
+#wrap>div.write_wrap button {
     padding: 20px;
     margin: 10px 0px;
     border: 1px solid #dadada;
@@ -115,23 +119,24 @@
     cursor: pointer;
 }
 
-#wrap > div.write_wrap button:hover {
+#wrap>div.write_wrap button:hover {
     background-color: #f8f8f8;
 }
+
 /* write_wrap end */
 
 
 /* list_wrap start */
-#wrap > div.list_wrap {
+#wrap>div.list_wrap {
     display: none;
 }
 
-#wrap > div.list_wrap div {
+#wrap>div.list_wrap div {
     margin: 2px auto;
     padding: 10px;
     width: 600px;
     border: 1px solid #dadada;
     border-radius: 7px;
 }
-/* list_wrap end */
 
+/* list_wrap end */
