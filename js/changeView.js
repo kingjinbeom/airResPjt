@@ -18,8 +18,8 @@ const initViews = () => {
 
     signUpWrap = document.querySelector("div.sign_up_wrap");
     signInWrap = document.querySelector("div.sign_in_wrap");
-    reservationWrap = document.querySelector("div.reservation_wrap");
-    listWrap = document.querySelector("div.list_wrap");
+    reservationWrap = document.querySelector("div.res_wrap");
+    listWrap = document.querySelector("div.res_list_wrap");
 };
 
 /* 선택된 뷰만 보이게 하기 */

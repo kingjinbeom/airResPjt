@@ -2,7 +2,7 @@ const userDB = new Map();
 const airResDB = new Map();
 
 /* 사용자 DB 만들기 시작 */
-const addUser = () => {
+const addUser = (id, pw, gender, mail, phone, reg_date) => {
     console.log('addUser() CALLED!!');
 
     //  id를 가지고 가입한다.
@@ -36,7 +36,7 @@ const searchUser = (id, pw) => {
 /* 사용자 DB 만들기 끝 */
 
 /* 비행기 예약 DB 시작 */
-const addAirRes = (no) => {
+const addAirRes = (no, id, name, mail, phone, d_location_no, depart_datetime, a_location_no, arrival_datetime) => {
     console.log('addAirRes() CALLED!!');
 
     airResDB.set(no, {
@@ -47,13 +47,13 @@ const addAirRes = (no) => {
         r_phone: phone,
         depart_location_no: d_location_no,
         r_depart_datetime: depart_datetime,
-        arrival_location_no: a_location_vo,
+        arrival_location_no: a_location_no,
         r_arrival_datetime: arrival_datetime,
     });
     console.log(airResDB.get(no));
 
-    let airResArr = airResDB.get(signInedUserId);
-    airResArr.push(no + id + name + mail + phone + d_location_no + depart_datetime + a_location_vo
+    let airResArr = airResDB.get(signInedMemberId);
+    airResArr.push(no + id + name + mail + phone + d_location_no + depart_datetime + a_location_no
         + arrival_datetime);
 
     console.log('airResArr: ', airResArr);
@@ -64,7 +64,7 @@ const addAirRes = (no) => {
 const searchAirRes = () => {
     console.log('searchAirRes() CALLED!!');
 
-    let airResArr = airResDB.get(signInedUserId);
+    let airResArr = airResDB.get(signInedMemberId);
     console.log('aiResArr: ', airResArr);
 
     return airResArr;
